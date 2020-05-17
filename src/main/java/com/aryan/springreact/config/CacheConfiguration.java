@@ -54,6 +54,8 @@ public class CacheConfiguration {
             createCache(cm, com.aryan.springreact.domain.Job.class.getName());
             createCache(cm, com.aryan.springreact.domain.Job.class.getName() + ".tasks");
             createCache(cm, com.aryan.springreact.domain.JobHistory.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Shop.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Product.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

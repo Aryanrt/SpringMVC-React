@@ -43,6 +43,14 @@ import job, {
 import jobHistory, {
   JobHistoryState
 } from 'app/entities/job-history/job-history.reducer';
+// prettier-ignore
+import shop, {
+  ShopState
+} from 'app/entities/shop/shop.reducer';
+// prettier-ignore
+import product, {
+  ProductState
+} from 'app/entities/product/product.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -63,6 +71,8 @@ export interface IRootState {
   readonly employee: EmployeeState;
   readonly job: JobState;
   readonly jobHistory: JobHistoryState;
+  readonly shop: ShopState;
+  readonly product: ProductState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -85,6 +95,8 @@ const rootReducer = combineReducers<IRootState>({
   employee,
   job,
   jobHistory,
+  shop,
+  product,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });
