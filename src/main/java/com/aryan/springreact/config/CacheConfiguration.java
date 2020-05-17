@@ -42,6 +42,18 @@ public class CacheConfiguration {
             createCache(cm, com.aryan.springreact.domain.User.class.getName());
             createCache(cm, com.aryan.springreact.domain.Authority.class.getName());
             createCache(cm, com.aryan.springreact.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.aryan.springreact.domain.Region.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Country.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Location.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Department.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.aryan.springreact.domain.Task.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.aryan.springreact.domain.Employee.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.aryan.springreact.domain.Job.class.getName());
+            createCache(cm, com.aryan.springreact.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.aryan.springreact.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
